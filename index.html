@@ -178,7 +178,7 @@
             if (symbolCount > 0) strength += 1;
             if (password.length >= 12) strength += 1; 
 
-            if(strength > 3 && count > 11) return "Very strong"
+            if(strength == 5 && count > 11) return "Very strong"
             if(strength > 3 && count > 7) return "Strong"
             if(strength >= 3 && count > 3) return "Moderate"
             else return "Weak"
